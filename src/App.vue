@@ -33,14 +33,35 @@ const viewsMap = {
   display: flex;
   height: 100%;
   width: 100%;
-  gap: 24px;
+  gap: 16px; /* Smanjeno sa 24px */
+}
+
+@media (max-width: 768px) {
+  .app-shell {
+    flex-direction: column;
+    padding: 12px;
+    gap: 12px;
+  }
 }
 
 .sidebar-wrapper {
-  width: 260px;
+  width: 220px; /* Smanjeno sa 250px */
   height: 100%;
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .sidebar-wrapper {
+    width: 100%;
+    height: auto;
+    order: 2;
+    position: fixed;
+    bottom: 12px;
+    left: 0;
+    padding: 0 12px;
+    z-index: 100;
+  }
 }
 
 .content-wrapper {
@@ -53,6 +74,13 @@ const viewsMap = {
   box-shadow:
     0 24px 60px rgba(15, 23, 42, 0.9),
     0 0 0 1px rgba(15, 23, 42, 0.7);
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    padding: 20px;
+    margin-bottom: 80px; /* Prostor za bottom bar */
+  }
 }
 
 .view {

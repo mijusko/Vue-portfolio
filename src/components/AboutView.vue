@@ -79,6 +79,12 @@ header p {
   margin-top: 12px;
 }
 
+@media (max-width: 640px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .info-item {
   background: rgba(15, 23, 42, 0.95);
   border-radius: 18px;

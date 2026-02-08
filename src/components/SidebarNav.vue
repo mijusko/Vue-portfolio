@@ -9,10 +9,26 @@ const props = defineProps({
 const emit = defineEmits(['change-view'])
 
 const links = [
-  { id: 'home', label: 'Home' },
-  { id: 'about', label: 'About me' },
-  { id: 'projects', label: 'Projects' },
-  { id: 'contact', label: 'Contact' }
+  { 
+    id: 'home', 
+    label: 'Home', 
+    iconPath: 'M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z' 
+  },
+  { 
+    id: 'about', 
+    label: 'About me', 
+    iconPath: 'M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z' 
+  },
+  { 
+    id: 'projects', 
+    label: 'Projects', 
+    iconPath: 'M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z' 
+  },
+  { 
+    id: 'contact', 
+    label: 'Contact', 
+    iconPath: 'M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z' 
+  }
 ]
 
 const handleClick = (id) => {
@@ -22,13 +38,6 @@ const handleClick = (id) => {
 
 <template>
   <nav class="sidebar">
-    <div class="brand">
-      <div class="brand-avatar">M</div>
-      <div class="brand-text">
-        <h1>My Portfolio</h1>
-        <p>Software Engineer</p>
-      </div>
-    </div>
 
     <ul class="nav-links">
       <li
@@ -37,7 +46,9 @@ const handleClick = (id) => {
         :class="['nav-item', { active: link.id === currentView }]"
         @click="handleClick(link.id)"
       >
-        <span class="nav-bullet" />
+        <svg class="nav-icon" viewBox="0 0 24 24" width="24" height="24">
+          <path :d="link.iconPath" fill="currentColor" />
+        </svg>
         <span class="nav-label">{{ link.label }}</span>
       </li>
     </ul>
@@ -66,11 +77,25 @@ const handleClick = (id) => {
   color: var(--text-main);
 }
 
+@media (max-width: 768px) {
+  .sidebar {
+    padding: 10px;
+    flex-direction: row;
+    border-radius: 20px;
+  }
+}
+
 .brand {
   display: flex;
   align-items: center;
   gap: 12px;
   margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+  .brand {
+    display: none; /* Sakrivamo logo na mobilnom bottom baru radi uštede prostora */
+  }
 }
 
 .brand-avatar {
@@ -107,6 +132,15 @@ const handleClick = (id) => {
   gap: 8px;
 }
 
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    gap: 0;
+  }
+}
+
 .nav-item {
   cursor: pointer;
   display: flex;
@@ -120,6 +154,16 @@ const handleClick = (id) => {
     color 0.2s ease,
     transform 0.1s ease,
     box-shadow 0.2s ease;
+}
+
+@media (max-width: 768px) {
+  .nav-item {
+    flex-direction: column;
+    gap: 4px;
+    padding: 8px 12px;
+    flex: 1;
+    justify-content: center;
+  }
 }
 
 .nav-item:hover {
@@ -137,19 +181,39 @@ const handleClick = (id) => {
     0 0 20px rgba(255, 140, 50, 0.8);
 }
 
-.nav-item.active .nav-bullet {
-  background: #0b1120;
+.nav-item.active .nav-icon {
+  color: #0b1120;
 }
 
-.nav-bullet {
-  width: 8px;
-  height: 8px;
-  border-radius: 999px;
-  background: rgba(148, 163, 184, 0.7);
+.nav-item:hover .nav-icon {
+  transform: scale(1.1);
+}
+
+.nav-icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  color: inherit;
+}
+
+@media (max-width: 768px) {
+  .nav-icon {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .nav-label {
   font-size: 0.88rem;
   font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .nav-label {
+    font-size: 0.7rem;
+  }
 }
 </style>

@@ -62,6 +62,14 @@ header p {
   margin-top: 8px;
 }
 
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    overflow-y: auto;
+  }
+}
+
 .form {
   display: flex;
   flex-direction: column;
