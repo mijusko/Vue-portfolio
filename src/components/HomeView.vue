@@ -88,6 +88,11 @@ img {
 }
 
 @media (max-width: 768px) {
+  .image-wrapper{
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 30%;
+}
   .image-glow-container {
     width: 280px;
     height: 280px;
