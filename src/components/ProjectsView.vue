@@ -142,7 +142,7 @@ const setProject = (index) => {
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 14px;
   color: white;
 }
 
@@ -168,6 +168,7 @@ header p {
 }
 
 .project-display {
+  margin: 0 50px;
   flex: 1;
   height: 100%;
   background: rgba(15, 23, 42, 0.6);
@@ -194,7 +195,7 @@ header p {
 
 .project-title {
   font-size: 2.2rem;
-  margin: 0 0 16px;
+  margin: 0px;
   background: linear-gradient(to right, #fff, var(--accent-soft));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -204,14 +205,14 @@ header p {
   font-size: 1.1rem;
   line-height: 1.6;
   color: var(--text-muted);
-  margin-bottom: 24px;
+  margin-bottom: 14px;
 }
 
 .tech-stack {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-bottom: 32px;
+  margin-bottom: 22px;
 }
 
 .tech-tag {
@@ -339,7 +340,7 @@ header p {
   .project-content {
     flex-direction: column;
     overflow-y: auto;
-    gap: 24px;
+    gap: 4px;
   }
   
   .project-visual {
@@ -350,50 +351,72 @@ header p {
 @media (max-width: 768px) {
   .projects-container {
     padding: 10px;
+    height: 100%;
+    overflow-y: auto; /* Omogućavamo skrolovanje cele sekcije ako zatreba */
   }
 
   .carousel-container {
-    gap: 10px;
+    gap: 5px;
   }
 
   .project-display {
-    padding: 20px;
+    padding: 16px;
   }
 
   .project-title {
-    font-size: 1.5rem;
+    font-size: 1.2rem; /* Smanjeno sa 1.5rem */
+    margin-bottom: 8px;
+  }
+
+  .project-description {
+    font-size: 0.8rem; /* Smanjeno */
+    line-height: 1.4;
+    margin-bottom: 12px;
+  }
+
+  .tech-stack {
+    gap: 4px;
+    margin-bottom: 12px;
+  }
+
+  .tech-tag {
+    font-size: 0.65rem; /* Smanjeno */
+    padding: 3px 6px;
+  }
+
+  .project-links {
+    gap: 8px;
+  }
+
+  .link-btn {
+    padding: 6px 12px;
+    font-size: 0.75rem; /* Smanjeno */
+    flex: 1;
+    text-align: center;
   }
 
   .nav-btn {
-    width: 40px;
-    height: 40px;
+    width: 32px; /* Smanjeno sa 40px */
+    height: 32px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
   }
 
   .nav-btn.prev {
-    left: -10px;
+    left: -5px;
   }
 
   .nav-btn.next {
-    right: -10px;
+    right: -5px;
   }
 
   .arrow {
-    font-size: 2rem;
+    font-size: 1.5rem; /* Smanjeno */
   }
 
-  .tech-tag {
-    font-size: 0.7rem;
-    padding: 4px 8px;
-  }
-
-  .link-btn {
-    padding: 8px 16px;
-    font-size: 0.8rem;
-    flex: 1;
-    text-align: center;
+  .video-wrapper {
+    margin-top: 10px;
   }
 }
 </style>

@@ -44,7 +44,7 @@
 
 @media (max-width: 768px) {
   .hero-container {
-    flex-direction: column-reverse;
+    flex-direction: column; /* Promenjeno sa column-reverse na column */
     justify-content: center;
     text-align: center;
     gap: 20px;

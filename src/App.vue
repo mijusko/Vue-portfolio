@@ -78,7 +78,7 @@ const viewsMap = {
 
 @media (max-width: 768px) {
   .content-wrapper {
-    padding: 20px;
+    padding: 0px;
     margin-bottom: 80px; /* Prostor za bottom bar */
   }
 }
