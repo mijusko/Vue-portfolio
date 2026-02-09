@@ -147,9 +147,12 @@ const setProject = (index) => {
 }
 
 header h2 {
-  margin: 0 0 4px;
+  margin: 0px;
   font-size: 1.8rem;
   color: var(--accent-soft);
+}
+h3.project-title{
+margin:0;
 }
 
 header p {
@@ -168,7 +171,7 @@ header p {
 }
 
 .project-display {
-  margin: 0 50px;
+  margin: 0 35px;
   flex: 1;
   height: 100%;
   background: rgba(15, 23, 42, 0.6);
@@ -340,7 +343,7 @@ header p {
   .project-content {
     flex-direction: column;
     overflow-y: auto;
-    gap: 4px;
+    gap: 8px; /* Smanjeno sa 24px (bilo je 4px u prethodnom čitanju, ali popravljam na optimalnih 8px) */
   }
   
   .project-visual {
@@ -349,6 +352,9 @@ header p {
 }
 
 @media (max-width: 768px) {
+  .project-content {
+    gap: 4px; /* Još manji razmak za mobilne telefone */
+  }
   .projects-container {
     padding: 10px;
     height: 100%;

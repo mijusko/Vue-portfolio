@@ -36,6 +36,10 @@ const viewsMap = {
   gap: 16px; /* Smanjeno sa 24px */
 }
 
+header{
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .app-shell {
     flex-direction: column;
