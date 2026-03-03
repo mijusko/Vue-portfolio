@@ -8,7 +8,7 @@ const projects = ref([
     id: 1,
     title: "E-commerce Platform",
     description: "Kompletno rešenje za online prodaju sa integrisanim sistemom plaćanja i upravljanjem zalihama. Fokus na brzini i sigurnosti.",
-    video: "/src/assets/BobbleBobble.mp4",
+    video: "/videos/BobbleBobble.mp4",
     technologies: ["Spring Boot", "Vue.js", "PostgreSQL", "Docker"],
     github: "https://github.com",
     live: "https://example.com"
@@ -17,7 +17,7 @@ const projects = ref([
     id: 2,
     title: "Real-time Chat App",
     description: "Aplikacija za razmenu poruka u realnom vremenu koristeći WebSocket tehnologiju. Podržava grupne razgovore i deljenje fajlova.",
-    video: "/src/assets/FindWarranty.mp4",
+    video: "/videos/FindWarranty.mp4",
     technologies: ["Node.js", "Socket.io", "Redis", "React"],
     github: "https://github.com",
     live: "https://example.com"
@@ -26,7 +26,7 @@ const projects = ref([
     id: 3,
     title: "AI Image Generator",
     description: "Interfejs za generisanje slika pomoću veštačke inteligencije. Koristi napredne modele za transformaciju teksta u vizuelni sadržaj.",
-    video: "/src/assets/JobCollector.mp4",
+    video: "/videos/JobCollector.mp4",
     technologies: ["Python", "PyTorch", "FastAPI", "Next.js"],
     github: "https://github.com",
     live: "https://example.com"
@@ -35,7 +35,7 @@ const projects = ref([
     id: 4,
     title: "Crypto Tracker",
     description: "Aplikacija za praćenje cena kriptovaluta u realnom vremenu sa detaljnim grafikonima i analizom portfolia.",
-    video: "/src/assets/TPfigma.mp4",
+    video: "/videos/TPfigma.mp4",
     technologies: ["Vue 3", "Chart.js", "CoinGecko API", "Tailwind"],
     github: "https://github.com",
     live: "https://example.com"
@@ -44,7 +44,7 @@ const projects = ref([
     id: 5,
     title: "Task Management Tool",
     description: "Alat za organizaciju timskog rada, sličan Trello platformi. Omogućava drag-and-drop upravljanje zadacima i rokovima.",
-    video: "/src/assets/VideoCall.mp4",
+    video: "/videos/VideoCall.mp4",
     technologies: ["Java", "Hibernate", "Angular", "MySQL"],
     github: "https://github.com",
     live: "https://example.com"
@@ -53,7 +53,7 @@ const projects = ref([
     id: 6,
     title: "Fitness Tracker API",
     description: "REST API za praćenje fitnes aktivnosti, ishrane i napretka korisnika. Dokumentovan pomoću Swagger-a.",
-    video: "/src/assets/YTconverter.mp4",
+    video: "/videos/YTconverter.mp4",
     technologies: ["Go", "Gin", "MongoDB", "JWT"],
     github: "https://github.com",
     live: "https://example.com"
