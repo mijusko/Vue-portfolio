@@ -60,6 +60,15 @@
   gap: 18px;
 }
 
+@media (max-width: 768px) {
+  .about {
+    height: auto;
+    min-height: 100%;
+    padding: 20px 10px 40px; /* Smanjen padding na dnu jer App.vue ima margin-bottom */
+    justify-content: flex-start;
+  }
+}
+
 header h2 {
   margin: 0px;
   font-size: 1.8rem;

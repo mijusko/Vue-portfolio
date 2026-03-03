@@ -84,13 +84,25 @@ header{
   .content-wrapper {
     padding: 0px;
     margin-bottom: 80px; /* Prostor za bottom bar */
+    overflow-y: auto;
   }
 }
 
 .view {
   height: 100%;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .view {
+    overflow: visible;
+  }
+}
+
+@media (min-width: 769px) {
+  .view {
+    overflow: hidden;
+  }
 }
 </style>
