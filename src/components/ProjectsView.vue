@@ -110,7 +110,6 @@ const setProject = (index) => {
             <div class="video-wrapper">
               <video 
                 :key="activeProject.video" 
-                controls 
                 muted 
                 autoplay 
                 loop 
