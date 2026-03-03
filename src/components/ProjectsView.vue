@@ -6,7 +6,7 @@ const activeIndex = ref(0);
 const projects = ref([
   {
     id: 1,
-    title: "JobCollector WebScrapper",
+    title: "Job Collector",
     description: "An automation tool designed to streamline the job search process by aggregating and centralizing job listings from multiple online platforms. This project addresses the challenge of fragmented job markets by scraping, parsing, and storing relevant vacancies.",
     video: "/videos/JobCollector.mp4",
     technologies: ["Python", "FastAPI", "Selenium", "Vue.js"],
@@ -15,8 +15,8 @@ const projects = ref([
   },
   {
     id: 2,
-    title: "Find-Warranty app for receipts",
-    description: "A streamlined web application designed to simplify the management of product warranties and digital receipts. Implement AI chat as financial assistant and for data recognition from recipts",
+    title: "Find-Warranty",
+    description: "A streamlined web application designed to simplify the management of product warranties and digital receipts. Implemented AI chat as financial assistant and for data recognition from receipts",
     video: "/videos/FindWarranty.mp4",
     technologies: ["Vue.js", "Spring boot", "PostgreSQL", "AI integration", "Docker"],
     github: "https://github.com/mijusko/FindWarranty",
@@ -24,7 +24,7 @@ const projects = ref([
   },
   {
     id: 3,
-    title: "VideoCall WebApp",
+    title: "Video Call",
     description: "A real-time video conferencing platform built to facilitate seamless peer-to-peer communication. This project focuses on the complexities of live data streaming, utilizing WebSockets for signaling and connection management.",
     video: "/videos/VideoCall.mp4",
     technologies: ["Java", "Spring boot", "WebSocket", "STUN/TURN Servers"],
@@ -33,7 +33,7 @@ const projects = ref([
   },
   {
     id: 4,
-    title: "Youtube Converter in Java",
+    title: "Youtube Converter",
     description: "A desktop utility tool developed in Java that allows users to download and convert YouTube content into various media formats.",
     video: "/videos/YTconverter.mp4",
     technologies: ["Java", "Java Swing", "AWT"],
@@ -49,7 +49,7 @@ const projects = ref([
   },
   {
     id: 6,
-    title: "BobbleBobble game in Java",
+    title: "BobbleBobble",
     description: "A custom-built 2D adventure game developed from scratch using Java. This project focuses on the core principles of game development, including a synchronized game loop, entity management, and real-time rendering.",
     video: "/videos/BobbleBobble.mp4",
     technologies: ["Java", "Java Swing", "AWT"],
