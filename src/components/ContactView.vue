@@ -96,10 +96,14 @@ header p {
 }
 
 .cards-grid {
+  align-content: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
   flex: 1;
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -107,6 +111,7 @@ header p {
     grid-template-columns: repeat(2, 1fr); /* 2x2 raspored */
     gap: 10px;
     padding-bottom: 80px; /* Više prostora za bottom bar */
+    max-width: 100%;
   }
 }
 
@@ -115,7 +120,7 @@ header p {
   backdrop-filter: blur(12px);
   border: 1px solid var(--glass-border);
   border-radius: 20px;
-  padding: 20px 16px;
+  padding: 16px 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -123,6 +128,7 @@ header p {
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  height: fit-content;
 }
 
 .contact-card.is-link {
@@ -150,14 +156,14 @@ header p {
 }
 
 .card-icon-wrapper {
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
   background: rgba(255, 140, 50, 0.1);
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   color: var(--accent-soft);
   transition: all 0.3s ease;
 }
@@ -169,16 +175,16 @@ header p {
 }
 
 .card-title {
-  font-size: 1rem;
-  margin: 0 0 8px;
+  font-size: 0.95rem;
+  margin: 0 0 6px;
   color: var(--text-main);
 }
 
 .card-content {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   color: var(--text-muted);
-  line-height: 1.4;
-  margin: 0 0 16px;
+  line-height: 1.3;
+  margin: 0 0 12px;
   flex: 1;
 }
 
@@ -190,13 +196,13 @@ header p {
 .action-btn {
   display: block;
   width: 100%;
-  padding: 8px;
+  padding: 6px;
   background: rgba(255, 140, 50, 0.1);
   border: 1px solid var(--accent-soft);
   color: var(--accent-soft);
   text-decoration: none;
   border-radius: 10px;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 600;
   transition: all 0.2s ease;
 }
@@ -207,29 +213,30 @@ header p {
 }
 
 .status-info {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   color: var(--text-muted);
   opacity: 0.8;
 }
 
 @media (max-width: 480px) {
   .card-title {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
   .card-content {
-    display: none; /* Sakrivamo opis na jako malim ekranima da bi stalo 2x2 */
+    font-size: 0.65rem;
+    margin-bottom: 8px;
   }
   .contact-card {
     padding: 12px 8px;
   }
   .card-icon-wrapper {
-    width: 36px;
-    height: 36px;
+    width: 32px;
+    height: 32px;
     margin-bottom: 8px;
   }
   .action-btn {
-    padding: 6px;
-    font-size: 0.7rem;
+    padding: 5px;
+    font-size: 0.65rem;
   }
 }
 </style>
