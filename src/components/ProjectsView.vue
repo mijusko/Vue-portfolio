@@ -108,7 +108,15 @@ const setProject = (index) => {
 
           <div class="project-visual">
             <div class="video-wrapper">
-              <video :key="activeProject.video" controls class="project-video">
+              <video 
+                :key="activeProject.video" 
+                controls 
+                muted 
+                autoplay 
+                loop 
+                playsinline
+                class="project-video"
+              >
                 <source :src="activeProject.video" type="video/mp4">
                 Vaš pretraživač ne podržava video tag.
               </video>
