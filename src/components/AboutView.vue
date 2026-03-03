@@ -95,9 +95,6 @@ header p {
 }
 
 @media (max-width: 768px) {
-  header h2 {
-    font-size: 1.5rem;
-  }
   header p {
     font-size: 0.85rem;
   }
