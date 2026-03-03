@@ -95,6 +95,9 @@ header p {
 }
 
 @media (max-width: 768px) {
+  header h2 {
+    font-size: 1.5rem;
+  }
   header p {
     font-size: 0.85rem;
   }
@@ -105,12 +108,6 @@ header p {
 }
 
 @media (max-width: 480px) {
-  header h2 {
-    font-size: 1.3rem;
-  }
-  header p {
-    font-size: 0.8rem;
-  }
   .content p {
     font-size: 0.8rem;
     margin-bottom: 10px;

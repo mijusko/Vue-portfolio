@@ -107,6 +107,12 @@ header p {
 }
 
 @media (max-width: 768px) {
+  header h2 {
+    font-size: 1.5rem;
+  }
+  header p {
+    font-size: 0.85rem;
+  }
   .cards-grid {
     grid-template-columns: repeat(2, 1fr); /* 2x2 raspored */
     gap: 10px;
