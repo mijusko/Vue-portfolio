@@ -4,10 +4,13 @@
       <div class="intro">
         <p class="eyebrow">Welcome to my portfolio</p>
         <h2>Hi, I'm <span class="accent">Mihajlo</span></h2>
-        <h3>Software Engineer & Backend Developer</h3>
+        <h3>Software Engineer & Fullstack Developer</h3>
         <p class="description">
-          Specijalizovan za izgradnju robusnih backend sistema i skalabilnih arhitektura. 
-          Pretvaram kompleksne probleme u elegantna, visoko-performansna rešenja.
+          I am a Computer Science
+           student dedicated to building clean, scalable,
+            and user-centric web applications.
+             I bridge the gap between robust backend
+              logic and intuitive frontend design.
         </p>
 
 

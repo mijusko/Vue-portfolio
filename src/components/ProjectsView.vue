@@ -6,57 +6,54 @@ const activeIndex = ref(0);
 const projects = ref([
   {
     id: 1,
-    title: "E-commerce Platform",
-    description: "Kompletno rešenje za online prodaju sa integrisanim sistemom plaćanja i upravljanjem zalihama. Fokus na brzini i sigurnosti.",
-    video: "/videos/BobbleBobble.mp4",
-    technologies: ["Spring Boot", "Vue.js", "PostgreSQL", "Docker"],
-    github: "https://github.com",
-    live: "https://example.com"
+    title: "JobCollector WebScrapper",
+    description: "An automation tool designed to streamline the job search process by aggregating and centralizing job listings from multiple online platforms. This project addresses the challenge of fragmented job markets by scraping, parsing, and storing relevant vacancies.",
+    video: "/videos/JobCollector.mp4",
+    technologies: ["Python", "FastAPI", "Selenium", "Vue.js"],
+    github: "https://github.com/mijusko/Job-Collector",
+    live: "https://job-collector.netlify.app/"
   },
   {
     id: 2,
-    title: "Real-time Chat App",
-    description: "Aplikacija za razmenu poruka u realnom vremenu koristeći WebSocket tehnologiju. Podržava grupne razgovore i deljenje fajlova.",
+    title: "Find-Warranty app for receipts",
+    description: "A streamlined web application designed to simplify the management of product warranties and digital receipts. Implement AI chat as financial assistant and for data recognition from recipts",
     video: "/videos/FindWarranty.mp4",
-    technologies: ["Node.js", "Socket.io", "Redis", "React"],
-    github: "https://github.com",
-    live: "https://example.com"
+    technologies: ["Vue.js", "Spring boot", "PostgreSQL", "AI integration", "Docker"],
+    github: "https://github.com/mijusko/FindWarranty",
+    live: "https://findwarranty.netlify.app/"
   },
   {
     id: 3,
-    title: "AI Image Generator",
-    description: "Interfejs za generisanje slika pomoću veštačke inteligencije. Koristi napredne modele za transformaciju teksta u vizuelni sadržaj.",
-    video: "/videos/JobCollector.mp4",
-    technologies: ["Python", "PyTorch", "FastAPI", "Next.js"],
-    github: "https://github.com",
-    live: "https://example.com"
+    title: "VideoCall WebApp",
+    description: "A real-time video conferencing platform built to facilitate seamless peer-to-peer communication. This project focuses on the complexities of live data streaming, utilizing WebSockets for signaling and connection management.",
+    video: "/videos/VideoCall.mp4",
+    technologies: ["Java", "Spring boot", "WebSocket", "STUN/TURN Servers"],
+    github: "https://github.com/mijusko/spring-boot-videocall",
+    live: "https://spring-boot-videocall.onrender.com/"
   },
   {
     id: 4,
-    title: "Crypto Tracker",
-    description: "Aplikacija za praćenje cena kriptovaluta u realnom vremenu sa detaljnim grafikonima i analizom portfolia.",
-    video: "/videos/TPfigma.mp4",
-    technologies: ["Vue 3", "Chart.js", "CoinGecko API", "Tailwind"],
-    github: "https://github.com",
-    live: "https://example.com"
+    title: "Youtube Converter in Java",
+    description: "A desktop utility tool developed in Java that allows users to download and convert YouTube content into various media formats.",
+    video: "/videos/YTconverter.mp4",
+    technologies: ["Java", "Java Swing", "AWT"],
+    github: "https://github.com/mijusko/Youtube-Converter-Java",
   },
   {
     id: 5,
-    title: "Task Management Tool",
-    description: "Alat za organizaciju timskog rada, sličan Trello platformi. Omogućava drag-and-drop upravljanje zadacima i rokovima.",
-    video: "/videos/VideoCall.mp4",
-    technologies: ["Java", "Hibernate", "Angular", "MySQL"],
-    github: "https://github.com",
-    live: "https://example.com"
+    title: "Figma Design",
+    description: "Spearheaded the UI/UX design phase using Figma, creating high-fidelity wireframes and prototypes that were fully adopted for the final production site.",
+    video: "/videos/TPfigma.mp4",
+    technologies: ["Figma", "UI/UX Design"],
+    live: "https://www.figma.com/design/GHJKKqVx8Bud2TJrA3zy7H/TeretanaPark?t=8AcCT9hdVSE1OxNc-1"
   },
   {
     id: 6,
-    title: "Fitness Tracker API",
-    description: "REST API za praćenje fitnes aktivnosti, ishrane i napretka korisnika. Dokumentovan pomoću Swagger-a.",
-    video: "/videos/YTconverter.mp4",
-    technologies: ["Go", "Gin", "MongoDB", "JWT"],
-    github: "https://github.com",
-    live: "https://example.com"
+    title: "BobbleBobble game in Java",
+    description: "A custom-built 2D adventure game developed from scratch using Java. This project focuses on the core principles of game development, including a synchronized game loop, entity management, and real-time rendering.",
+    video: "/videos/BobbleBobble.mp4",
+    technologies: ["Java", "Java Swing", "AWT"],
+    github: "https://github.com/mijusko/Java-Game",
   }
 ]);
 
@@ -79,7 +76,7 @@ const setProject = (index) => {
   <section class="projects">
     <header>
       <h2>My Projects</h2>
-      <p>Istražite moje najnovije radove kroz ovaj interaktivni karusel.</p>
+      
     </header>
 
     <div class="carousel-container">

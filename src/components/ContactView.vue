@@ -84,14 +84,14 @@ const openLink = (link) => {
 }
 
 header h2 {
-  margin: 0 0 4px;
-  font-size: 1.6rem;
+  margin: 0px;
+  font-size: 1.8rem;
   color: var(--accent-soft);
 }
 
 header p {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: var(--text-muted);
 }
 
