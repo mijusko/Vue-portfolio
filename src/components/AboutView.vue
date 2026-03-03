@@ -8,11 +8,8 @@
       <p>
         My approach combines a strong foundation
          in Software Engineering with hands-on
-          experience in modern frameworks like
-           Spring Boot and Vue.js. Whether it's architectin
-           g databases or prototyping interfaces in Figma,
-            I focus on writing high-quality code
-             that delivers a seamless user experience.
+          experience in modern frameworks. Whether it's
+            architecting databases or prototyping interfaces.
       </p>
       <p>
         My approach combines a strong foundation in 
@@ -86,6 +83,32 @@ header p {
   margin: 0 0 12px;
   line-height: 1.6;
   color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  header h2 {
+    font-size: 1.5rem;
+  }
+  header p {
+    font-size: 0.85rem;
+  }
+  .content p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 480px) {
+  header h2 {
+    font-size: 1.3rem;
+  }
+  header p {
+    font-size: 0.8rem;
+  }
+  .content p {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+  }
 }
 
 .accent {
