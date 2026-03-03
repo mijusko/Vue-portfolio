@@ -57,7 +57,9 @@ const openLink = (link) => {
         :class="{ 'is-link': card.link }"
       >
         <div class="card-icon-wrapper">
-          <img src="/resume.png" alt="icon" class="card-link-icon" />
+          <svg viewBox="0 0 24 24" width="24" height="24" class="card-icon">
+            <path :d="card.iconPath" fill="currentColor" />
+          </svg>
         </div>
         <h3 class="card-title">{{ card.title }}</h3>
         <p class="card-content">{{ card.content }}</p>
@@ -156,17 +158,13 @@ header p {
   align-items: center;
   justify-content: center;
   margin-bottom: 12px;
+  color: var(--accent-soft);
   transition: all 0.3s ease;
-}
-
-.card-link-icon {
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
 }
 
 .contact-card:hover .card-icon-wrapper {
   background: var(--accent-soft);
+  color: #0f172a;
   transform: scale(1.05) rotate(5deg);
 }
 

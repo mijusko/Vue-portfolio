@@ -98,10 +98,10 @@ const setProject = (index) => {
 
             <div class="project-links">
               <a v-if="activeProject.live" :href="activeProject.live" target="_blank" class="link-btn primary">
-                <img src="/resume.png" alt="icon" class="link-icon" /> Live Demo
+                <i class="icon">🌐</i> Live Demo
               </a>
               <a v-if="activeProject.github" :href="activeProject.github" target="_blank" class="link-btn secondary">
-                <img src="/resume.png" alt="icon" class="link-icon" /> GitHub
+                <i class="icon">📁</i> GitHub
               </a>
             </div>
           </div>
@@ -267,13 +267,6 @@ header p {
 .link-btn:hover {
   background: rgba(255, 255, 255, 0.1);
   transform: translateY(-2px);
-}
-
-.link-icon {
-  width: 18px;
-  height: 18px;
-  object-fit: contain;
-  margin-right: 8px;
 }
 
 .project-visual {
