@@ -16,6 +16,7 @@
          
         <span class="accent">Software Engineering</span> 
         with hands-on experience in modern frameworks like 
+        <span class="accent">Ruby on Rails</span>, 
         <span class="accent">Spring Boot</span>, 
         <span class="accent">Django</span> and <span class="accent">Vue.js</span>
       </p>
@@ -32,6 +33,7 @@
         <div class="info-item">
           <h3>Backend</h3>
           <ul>
+            <li>Ruby: Ruby on Rails</li>
             <li>Java: Spring Boot</li>
             <li>Python: Django, FastAPI</li>
             <li>Databases: SQL (PostgreSQL, MySQL)</li>

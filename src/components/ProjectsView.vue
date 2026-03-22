@@ -27,9 +27,9 @@ const projects = ref([
     title: "Video Call",
     description: "A real-time video conferencing platform built to facilitate seamless peer-to-peer communication. This project focuses on the complexities of live data streaming, utilizing WebSockets for signaling and connection management.",
     video: "/videos/VideoCall.mp4",
-    technologies: ["Java", "Spring boot", "WebSocket", "STUN/TURN Servers"],
-    github: "https://github.com/mijusko/spring-boot-videocall",
-    live: "https://spring-boot-videocall.onrender.com/"
+    technologies: ["Ruby", "Ruby on Rails", "WebSocket", "STUN/TURN Servers"],
+    github: "https://github.com/mijusko/rails-video-chat",
+    live: "https://rails-video-chat.onrender.com//"
   },
   {
     id: 4,
@@ -50,10 +50,10 @@ const projects = ref([
   {
     id: 6,
     title: "BobbleBobble",
-    description: "A custom-built 2D adventure game developed from scratch using Java. This project focuses on the core principles of game development, including a synchronized game loop, entity management, and real-time rendering.",
+    description: "A custom-built 2D adventure game developed from scratch using Ruby. This project focuses on the core principles of game development, including a synchronized game loop, entity management, and real-time rendering.",
     video: "/videos/BobbleBobble.mp4",
-    technologies: ["Java", "Java Swing", "AWT"],
-    github: "https://github.com/mijusko/Java-Game",
+    technologies: ["Ruby", "Gosy", "2D Game"],
+    github: "https://github.com/mijusko/rubyGame",
   }
 ]);
 
